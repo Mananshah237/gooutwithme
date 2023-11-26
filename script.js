@@ -20,15 +20,6 @@ noBtn.addEventListener("mouseover", () => {
 
   noBtn.style.left = randomX + "px";
   noBtn.style.top = randomY + "px";
-});// This script should be at the end of your body tag or executed after the DOM is fully loaded
-document.addEventListener('DOMContentLoaded', (event) => {
-    const slide1 = document.getElementById('slide1');
-    const slide2 = document.getElementById('slide2');
-
-    document.querySelector('.next-btn').addEventListener('click', () => {
-        slide1.style.display = 'none';  // Hide Slide 1
-        slide2.style.display = 'block'; // Show Slide 2
-    });
 });
 
 
