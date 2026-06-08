@@ -1,0 +1,45 @@
+{
+  "name": "employment-legal",
+  "version": "1.0.0",
+  "description": "Hire and termination reviews, worker classification, leave tracking, separation agreements, and investigation support.",
+  "author": "Anthropic",
+  "license": "Apache-2.0",
+  "skills": [
+    {
+      "name": "cold-start-interview",
+      "description": "Initial practice profile setup — learns your headcount, jurisdictions, HR systems, and employment law posture in 10-15 minutes",
+      "path": "skills/cold-start-interview/SKILL.md"
+    },
+    {
+      "name": "termination-review",
+      "description": "Review a proposed termination for legal risk, documentation gaps, and jurisdiction-specific notice requirements",
+      "path": "skills/termination-review/SKILL.md"
+    },
+    {
+      "name": "hiring-review",
+      "description": "Screen offer letters, job postings, and background-check practices against your jurisdiction's requirements",
+      "path": "skills/hiring-review/SKILL.md"
+    },
+    {
+      "name": "leave-tracker",
+      "description": "Track employee leave requests against FMLA, state leave laws, and company policy",
+      "path": "skills/leave-tracker/SKILL.md"
+    },
+    {
+      "name": "classification-check",
+      "description": "Assess worker classification risk (employee vs. contractor) under applicable federal and state tests",
+      "path": "skills/classification-check/SKILL.md"
+    },
+    {
+      "name": "separation-agreement",
+      "description": "Draft a separation agreement and release tailored to the employee's tenure, jurisdiction, and age",
+      "path": "skills/separation-agreement/SKILL.md"
+    }
+  ],
+  "tools": [
+    "read_file",
+    "write_file",
+    "web_search"
+  ],
+  "mcp": ".mcp.json"
+}

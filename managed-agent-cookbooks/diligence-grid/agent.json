@@ -1,0 +1,13 @@
+{
+  "name": "diligence-grid",
+  "version": "1.0.0",
+  "description": "On-demand VDR monitoring during M&A diligence. Triages new document uploads by issue type and updates the diligence grid.",
+  "schedule": "on-demand",
+  "model": "claude-opus-4-8",
+  "tools": {
+    "orchestrator": ["read_file"],
+    "subagent": ["read_file", "write_file", "mcp_imanage", "mcp_box", "mcp_google_drive", "mcp_slack"]
+  },
+  "env_required": ["ANTHROPIC_API_KEY"],
+  "env_optional": ["IMANAGE_TOKEN", "BOX_ACCESS_TOKEN", "GOOGLE_DRIVE_CREDENTIALS", "SLACK_BOT_TOKEN"]
+}

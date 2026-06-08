@@ -1,0 +1,50 @@
+{
+  "name": "ip-legal",
+  "version": "1.0.0",
+  "description": "Trademark clearance, freedom-to-operate triage, cease-and-desist drafting, patent claim charts, OSS license scanning, and DMCA compliance.",
+  "author": "Anthropic",
+  "license": "Apache-2.0",
+  "skills": [
+    {
+      "name": "cold-start-interview",
+      "description": "Initial practice profile setup — learns your IP portfolio, enforcement posture, and prosecution preferences in 10-15 minutes",
+      "path": "skills/cold-start-interview/SKILL.md"
+    },
+    {
+      "name": "clearance",
+      "description": "Trademark clearance search and risk assessment for a new mark, brand name, or product name",
+      "path": "skills/clearance/SKILL.md"
+    },
+    {
+      "name": "cease-desist",
+      "description": "Draft a cease-and-desist letter for trademark infringement, copyright infringement, or trade secret misappropriation",
+      "path": "skills/cease-desist/SKILL.md"
+    },
+    {
+      "name": "claim-chart",
+      "description": "Map patent claims to an accused product or process in a structured claim chart",
+      "path": "skills/claim-chart/SKILL.md"
+    },
+    {
+      "name": "oss-scan",
+      "description": "Review an open-source dependency manifest for license compatibility, copyleft obligations, and notice requirements",
+      "path": "skills/oss-scan/SKILL.md"
+    },
+    {
+      "name": "dmca",
+      "description": "Draft DMCA takedown notices or counter-notifications; review safe harbor compliance for platform clients",
+      "path": "skills/dmca/SKILL.md"
+    },
+    {
+      "name": "fto-triage",
+      "description": "Freedom-to-operate triage — identify relevant patents and surface design-around options for a described product or feature",
+      "path": "skills/fto-triage/SKILL.md"
+    }
+  ],
+  "tools": [
+    "read_file",
+    "write_file",
+    "web_search"
+  ],
+  "mcp": ".mcp.json"
+}

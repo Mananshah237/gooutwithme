@@ -1,0 +1,47 @@
+{
+  "name": "commercial-legal",
+  "version": "1.0.0",
+  "description": "Reviews vendor agreements, NDAs, and SaaS subscriptions. Tracks renewal deadlines and routes escalations against your team playbook.",
+  "author": "Anthropic",
+  "license": "Apache-2.0",
+  "skills": [
+    {
+      "name": "cold-start-interview",
+      "description": "Initial practice profile setup — learns your team playbook in 10-15 minutes",
+      "path": "skills/cold-start-interview/SKILL.md"
+    },
+    {
+      "name": "review",
+      "description": "Route and review inbound agreements against your playbook",
+      "path": "skills/review/SKILL.md"
+    },
+    {
+      "name": "renewal-tracker",
+      "description": "Scan contract register for cancel-by deadlines within 90 days",
+      "path": "skills/renewal-tracker/SKILL.md"
+    },
+    {
+      "name": "nda-review",
+      "description": "Triage NDAs — mutual vs. one-way, term, permitted purpose, residuals",
+      "path": "skills/nda-review/SKILL.md"
+    },
+    {
+      "name": "escalation-flagger",
+      "description": "Route issues to the right approver based on your escalation matrix",
+      "path": "skills/escalation-flagger/SKILL.md"
+    }
+  ],
+  "agents": [
+    {
+      "name": "renewal-watcher",
+      "path": "agents/renewal-watcher.md",
+      "schedule": "weekly"
+    }
+  ],
+  "tools": [
+    "read_file",
+    "write_file",
+    "web_search"
+  ],
+  "mcp": ".mcp.json"
+}

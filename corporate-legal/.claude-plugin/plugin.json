@@ -1,0 +1,45 @@
+{
+  "name": "corporate-legal",
+  "version": "1.0.0",
+  "description": "M&A diligence grids, disclosure schedules, board consents, closing checklists, and entity compliance calendars.",
+  "author": "Anthropic",
+  "license": "Apache-2.0",
+  "skills": [
+    {
+      "name": "cold-start-interview",
+      "description": "Initial practice profile setup — learns your deal types, entity roster, and approval matrix in 10-15 minutes",
+      "path": "skills/cold-start-interview/SKILL.md"
+    },
+    {
+      "name": "tabular-review",
+      "description": "Populate a diligence grid by extracting key terms from uploaded deal documents",
+      "path": "skills/tabular-review/SKILL.md"
+    },
+    {
+      "name": "closing-checklist",
+      "description": "Generate and track a transaction closing checklist with party and deadline assignments",
+      "path": "skills/closing-checklist/SKILL.md"
+    },
+    {
+      "name": "board-consent",
+      "description": "Draft board or unanimous written consent for a specified corporate action",
+      "path": "skills/board-consent/SKILL.md"
+    },
+    {
+      "name": "entity-compliance",
+      "description": "Surface upcoming filing deadlines and compliance obligations across your entity roster",
+      "path": "skills/entity-compliance/SKILL.md"
+    },
+    {
+      "name": "disclosure-schedule",
+      "description": "Draft and populate disclosure schedules keyed to a rep-and-warranty set",
+      "path": "skills/disclosure-schedule/SKILL.md"
+    }
+  ],
+  "tools": [
+    "read_file",
+    "write_file",
+    "web_search"
+  ],
+  "mcp": ".mcp.json"
+}

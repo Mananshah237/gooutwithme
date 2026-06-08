@@ -1,0 +1,45 @@
+{
+  "name": "regulatory-legal",
+  "version": "1.0.0",
+  "description": "Regulatory monitoring, policy gap analysis, NPRM response drafting, and comment-letter tracking for compliance and government affairs teams.",
+  "author": "Anthropic",
+  "license": "Apache-2.0",
+  "skills": [
+    {
+      "name": "cold-start-interview",
+      "description": "Initial practice profile setup — learns your regulatory universe, agency dockets, and compliance calendar in 10-15 minutes",
+      "path": "skills/cold-start-interview/SKILL.md"
+    },
+    {
+      "name": "reg-feed-watcher",
+      "description": "Monitor Federal Register, agency dockets, and state regulatory feeds for new rules, proposals, and guidance in your regulatory universe",
+      "path": "skills/reg-feed-watcher/SKILL.md"
+    },
+    {
+      "name": "policy-diff",
+      "description": "Compare two versions of a regulation or policy document and surface material changes with legal significance",
+      "path": "skills/policy-diff/SKILL.md"
+    },
+    {
+      "name": "gaps",
+      "description": "Map your current compliance posture against a new or amended regulation and surface gaps requiring remediation",
+      "path": "skills/gaps/SKILL.md"
+    },
+    {
+      "name": "nprm-response",
+      "description": "Draft a notice-and-comment response to a proposed rulemaking keyed to your organization's positions",
+      "path": "skills/nprm-response/SKILL.md"
+    },
+    {
+      "name": "comment-tracker",
+      "description": "Track the status of comment letters submitted, agency response timelines, and final rule publication dates",
+      "path": "skills/comment-tracker/SKILL.md"
+    }
+  ],
+  "tools": [
+    "read_file",
+    "write_file",
+    "web_search"
+  ],
+  "mcp": ".mcp.json"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "legal-clinic",
+  "version": "1.0.0",
+  "description": "Client intake, legal memos, deadline tracking, and student task routing for law school clinics and legal aid organizations.",
+  "author": "Anthropic",
+  "license": "Apache-2.0",
+  "skills": [
+    {
+      "name": "cold-start-interview",
+      "description": "Initial practice profile setup — learns your clinic's practice areas, jurisdiction, supervising attorneys, and student team in 10-15 minutes",
+      "path": "skills/cold-start-interview/SKILL.md"
+    },
+    {
+      "name": "client-intake",
+      "description": "Structure a new client matter — capture presenting facts, identify applicable legal theories, and flag conflicts",
+      "path": "skills/client-intake/SKILL.md"
+    },
+    {
+      "name": "memo",
+      "description": "Draft a structured legal memorandum (Question Presented, Short Answer, Facts, Analysis, Conclusion) on a specified legal question",
+      "path": "skills/memo/SKILL.md"
+    },
+    {
+      "name": "deadlines",
+      "description": "Track filing deadlines, statutes of limitations, and court date calendars across active clinic matters",
+      "path": "skills/deadlines/SKILL.md"
+    },
+    {
+      "name": "student-ramp",
+      "description": "Onboard a new student clinician — brief the practice area, explain the matter queue, and assign initial research tasks",
+      "path": "skills/student-ramp/SKILL.md"
+    }
+  ],
+  "tools": [
+    "read_file",
+    "write_file",
+    "web_search"
+  ],
+  "mcp": ".mcp.json"
+}

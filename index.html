@@ -1,20 +1,508 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>message for you</title>
-    <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claude for Legal — AI Agents for Legal Work</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="wrapper">
-        <h2 class="question">Will you go out wisdfsdfth me?</h2>
-        <img class="gif" alt="gif" src="https://media.giphy.com/media/FTGah7Mx3ss04PcasF/giphy.gif"/>
-        <div class="btn-group">
-            <button class="yes-btn">Yes</button>
-            <button class="no-btn">No</button>
-        </div>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <span class="nav-logo">⚖️ Claude for Legal</span>
+      <div class="nav-links">
+        <a href="#plugins">Plugins</a>
+        <a href="#connectors">Connectors</a>
+        <a href="#install">Install</a>
+        <a href="https://github.com/anthropics/claude-for-legal" target="_blank" rel="noopener">GitHub</a>
+      </div>
     </div>
-    <script src="script.js"></script>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-badge">Apache 2.0 · Anthropic PBC</div>
+      <h1>Claude for Legal</h1>
+      <p class="hero-sub">Reference agents, skills, and data connectors for in-house and law firm legal work — across 12 practice areas. Every output is a draft for attorney review.</p>
+      <div class="hero-actions">
+        <a href="#install" class="btn-primary">Get Started in 60s</a>
+        <a href="#plugins" class="btn-secondary">Browse Plugins</a>
+      </div>
+      <div class="hero-disclaimer">
+        ⚠️ Every output is a draft for attorney review — not legal advice. A lawyer reviews, verifies, and takes professional responsibility for anything that leaves the building.
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats">
+    <div class="stats-inner">
+      <div class="stat">
+        <span class="stat-num">12</span>
+        <span class="stat-label">Practice Area Plugins</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">40+</span>
+        <span class="stat-label">Skills & Agents</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">15+</span>
+        <span class="stat-label">MCP Connectors</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">0</span>
+        <span class="stat-label">Build Steps Required</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLUGINS -->
+  <section class="plugins" id="plugins">
+    <div class="section-inner">
+      <h2>Practice Area Plugins</h2>
+      <p class="section-sub">Each plugin starts with a cold-start interview that learns your team's playbook. Subsequent skills use your practice profile for contextual, jurisdiction-aware output.</p>
+
+      <div class="plugin-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="inhouse">In-House</button>
+        <button class="filter-btn" data-filter="firm">Law Firm</button>
+        <button class="filter-btn" data-filter="education">Education</button>
+      </div>
+
+      <div class="plugin-grid">
+
+        <div class="plugin-card" data-category="inhouse">
+          <div class="plugin-icon">📄</div>
+          <div class="plugin-name">commercial-legal</div>
+          <div class="plugin-desc">Vendor agreements, NDAs, SaaS subscriptions, renewal tracking, and escalation routing against your team's playbook.</div>
+          <div class="plugin-skills">
+            <span class="skill-tag">/review</span>
+            <span class="skill-tag">/renewal-tracker</span>
+            <span class="skill-tag">/escalation-flagger</span>
+            <span class="skill-tag">/amendment-history</span>
+            <span class="skill-tag">/nda-review</span>
+          </div>
+          <div class="plugin-install">
+            <code>/plugin install commercial-legal@claude-for-legal</code>
+            <button class="copy-btn" data-copy="/plugin install commercial-legal@claude-for-legal">Copy</button>
+          </div>
+        </div>
+
+        <div class="plugin-card" data-category="inhouse">
+          <div class="plugin-icon">🔒</div>
+          <div class="plugin-name">privacy-legal</div>
+          <div class="plugin-desc">Processing activities, PIAs, DPA review, DSAR responses, and regulatory gap analysis across jurisdictions.</div>
+          <div class="plugin-skills">
+            <span class="skill-tag">/dsar-response</span>
+            <span class="skill-tag">/dpa-review</span>
+            <span class="skill-tag">/pia-generation</span>
+            <span class="skill-tag">/reg-gap-analysis</span>
+            <span class="skill-tag">/policy-monitor</span>
+          </div>
+          <div class="plugin-install">
+            <code>/plugin install privacy-legal@claude-for-legal</code>
+            <button class="copy-btn" data-copy="/plugin install privacy-legal@claude-for-legal">Copy</button>
+          </div>
+        </div>
+
+        <div class="plugin-card" data-category="inhouse">
+          <div class="plugin-icon">🚀</div>
+          <div class="plugin-name">product-legal</div>
+          <div class="plugin-desc">Launch review, marketing claims substantiation, feature risk triage, and go-to-market legal sign-off.</div>
+          <div class="plugin-skills">
+            <span class="skill-tag">/launch-review</span>
+            <span class="skill-tag">/marketing-claims-review</span>
+            <span class="skill-tag">/feature-triage</span>
+            <span class="skill-tag">/cold-start-interview</span>
+          </div>
+          <div class="plugin-install">
+            <code>/plugin install product-legal@claude-for-legal</code>
+            <button class="copy-btn" data-copy="/plugin install product-legal@claude-for-legal">Copy</button>
+          </div>
+        </div>
+
+        <div class="plugin-card" data-category="firm inhouse">
+          <div class="plugin-icon">🏢</div>
+          <div class="plugin-name">corporate-legal</div>
+          <div class="plugin-desc">M&A diligence grids, closing checklists, board consents, disclosure schedules, and entity compliance calendars.</div>
+          <div class="plugin-skills">
+            <span class="skill-tag">/tabular-review</span>
+            <span class="skill-tag">/closing-checklist</span>
+            <span class="skill-tag">/board-consent</span>
+            <span class="skill-tag">/entity-compliance</span>
+          </div>
+          <div class="plugin-install">
+            <code>/plugin install corporate-legal@claude-for-legal</code>
+            <button class="copy-btn" data-copy="/plugin install corporate-legal@claude-for-legal">Copy</button>
+          </div>
+        </div>
+
+        <div class="plugin-card" data-category="inhouse">
+          <div class="plugin-icon">👥</div>
+          <div class="plugin-name">employment-legal</div>
+          <div class="plugin-desc">Hire/termination reviews, worker classification, leave tracking, separation agreements, and investigations.</div>
+          <div class="plugin-skills">
+            <span class="skill-tag">/termination-review</span>
+            <span class="skill-tag">/hiring-review</span>
+            <span class="skill-tag">/leave-tracker</span>
+            <span class="skill-tag">/classification-check</span>
+          </div>
+          <div class="plugin-install">
+            <code>/plugin install employment-legal@claude-for-legal</code>
+            <button class="copy-btn" data-copy="/plugin install employment-legal@claude-for-legal">Copy</button>
+          </div>
+        </div>
+
+        <div class="plugin-card" data-category="inhouse">
+          <div class="plugin-icon">📡</div>
+          <div class="plugin-name">regulatory-legal</div>
+          <div class="plugin-desc">Feed monitoring, rule diffs, comment deadline tracking, gap analysis, and NPRM response drafting.</div>
+          <div class="plugin-skills">
+            <span class="skill-tag">/reg-feed-watcher</span>
+            <span class="skill-tag">/policy-diff</span>
+            <span class="skill-tag">/gaps</span>
+            <span class="skill-tag">/nprm-response</span>
+          </div>
+          <div class="plugin-install">
+            <code>/plugin install regulatory-legal@claude-for-legal</code>
+            <button class="copy-btn" data-copy="/plugin install regulatory-legal@claude-for-legal">Copy</button>
+          </div>
+        </div>
+
+        <div class="plugin-card" data-category="inhouse">
+          <div class="plugin-icon">🤖</div>
+          <div class="plugin-name">ai-governance-legal</div>
+          <div class="plugin-desc">AI use-case triage, AI impact assessments, vendor AI terms review, and multi-jurisdiction policy tracking.</div>
+          <div class="plugin-skills">
+            <span class="skill-tag">/use-case-triage</span>
+            <span class="skill-tag">/aia-generation</span>
+            <span class="skill-tag">/vendor-ai-review</span>
+            <span class="skill-tag">/policy-tracker</span>
+          </div>
+          <div class="plugin-install">
+            <code>/plugin install ai-governance-legal@claude-for-legal</code>
+            <button class="copy-btn" data-copy="/plugin install ai-governance-legal@claude-for-legal">Copy</button>
+          </div>
+        </div>
+
+        <div class="plugin-card" data-category="firm inhouse">
+          <div class="plugin-icon">™️</div>
+          <div class="plugin-name">ip-legal</div>
+          <div class="plugin-desc">Trademark clearance, FTO triage, cease-and-desist drafting, DMCA handling, OSS compliance, and patent claim charts.</div>
+          <div class="plugin-skills">
+            <span class="skill-tag">/clearance</span>
+            <span class="skill-tag">/cease-desist</span>
+            <span class="skill-tag">/claim-chart</span>
+            <span class="skill-tag">/oss-scan</span>
+            <span class="skill-tag">/dmca</span>
+          </div>
+          <div class="plugin-install">
+            <code>/plugin install ip-legal@claude-for-legal</code>
+            <button class="copy-btn" data-copy="/plugin install ip-legal@claude-for-legal">Copy</button>
+          </div>
+        </div>
+
+        <div class="plugin-card" data-category="firm">
+          <div class="plugin-icon">⚖️</div>
+          <div class="plugin-name">litigation-legal</div>
+          <div class="plugin-desc">Matter portfolio management, chronologies, privilege review, claim charts, deposition prep, and brief drafting.</div>
+          <div class="plugin-skills">
+            <span class="skill-tag">/matter-intake</span>
+            <span class="skill-tag">/chronology</span>
+            <span class="skill-tag">/privilege-review</span>
+            <span class="skill-tag">/deposition-prep</span>
+            <span class="skill-tag">/brief-draft</span>
+          </div>
+          <div class="plugin-install">
+            <code>/plugin install litigation-legal@claude-for-legal</code>
+            <button class="copy-btn" data-copy="/plugin install litigation-legal@claude-for-legal">Copy</button>
+          </div>
+        </div>
+
+        <div class="plugin-card" data-category="education">
+          <div class="plugin-icon">🎓</div>
+          <div class="plugin-name">legal-clinic</div>
+          <div class="plugin-desc">Clinic setup, client intake, deadline tracking, memo drafting, and ABA-compliant supervision workflows for law school clinics.</div>
+          <div class="plugin-skills">
+            <span class="skill-tag">/client-intake</span>
+            <span class="skill-tag">/memo</span>
+            <span class="skill-tag">/deadlines</span>
+            <span class="skill-tag">/student-ramp</span>
+          </div>
+          <div class="plugin-install">
+            <code>/plugin install legal-clinic@claude-for-legal</code>
+            <button class="copy-btn" data-copy="/plugin install legal-clinic@claude-for-legal">Copy</button>
+          </div>
+        </div>
+
+        <div class="plugin-card" data-category="education">
+          <div class="plugin-icon">📚</div>
+          <div class="plugin-name">law-student</div>
+          <div class="plugin-desc">Socratic drilling, IRAC grading, case briefs, bar prep flashcards, and exam question forecasting.</div>
+          <div class="plugin-skills">
+            <span class="skill-tag">/socratic-drill</span>
+            <span class="skill-tag">/irac-practice</span>
+            <span class="skill-tag">/bar-prep</span>
+            <span class="skill-tag">/case-brief</span>
+          </div>
+          <div class="plugin-install">
+            <code>/plugin install law-student@claude-for-legal</code>
+            <button class="copy-btn" data-copy="/plugin install law-student@claude-for-legal">Copy</button>
+          </div>
+        </div>
+
+        <div class="plugin-card vendor-card" data-category="firm inhouse">
+          <div class="plugin-icon">🔬</div>
+          <div class="plugin-name">cocounsel-legal <span class="vendor-badge">Thomson Reuters</span></div>
+          <div class="plugin-desc">Westlaw research reports, statute lookups, case law search, and citation verification via CoCounsel integration.</div>
+          <div class="plugin-skills">
+            <span class="skill-tag">/westlaw-search</span>
+            <span class="skill-tag">/statute-lookup</span>
+            <span class="skill-tag">/case-research</span>
+          </div>
+          <div class="plugin-install">
+            <code>/plugin install cocounsel-legal@claude-for-legal</code>
+            <button class="copy-btn" data-copy="/plugin install cocounsel-legal@claude-for-legal">Copy</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MANAGED AGENTS -->
+  <section class="agents">
+    <div class="section-inner">
+      <h2>Managed Agents</h2>
+      <p class="section-sub">Deploy headless agents for scheduled, automated legal workflows. Run them on a cron behind your own workflow engine.</p>
+      <div class="agents-grid">
+        <div class="agent-card">
+          <div class="agent-name">renewal-watcher</div>
+          <div class="agent-freq">Weekly</div>
+          <div class="agent-desc">Scans contract register for cancel-by deadlines within 90 days. Posts digest to Slack or email.</div>
+        </div>
+        <div class="agent-card">
+          <div class="agent-name">docket-watcher</div>
+          <div class="agent-freq">Daily</div>
+          <div class="agent-desc">Monitors court dockets for new filings, orders, and deadlines across active matters.</div>
+        </div>
+        <div class="agent-card">
+          <div class="agent-name">reg-monitor</div>
+          <div class="agent-freq">Weekly</div>
+          <div class="agent-desc">Sweeps regulatory feeds for new rules, amendments, and enforcement actions in your practice areas.</div>
+        </div>
+        <div class="agent-card">
+          <div class="agent-name">launch-radar</div>
+          <div class="agent-freq">Weekly</div>
+          <div class="agent-desc">Watches product roadmap for upcoming launches that need legal review — flags before engineering ships.</div>
+        </div>
+        <div class="agent-card">
+          <div class="agent-name">diligence-grid</div>
+          <div class="agent-freq">On-demand</div>
+          <div class="agent-desc">Monitors VDR for new document uploads during M&A diligence, triages by issue type, updates the grid.</div>
+        </div>
+      </div>
+      <div class="agents-install">
+        <p>Deploy a managed agent:</p>
+        <div class="code-block">
+          <code>export ANTHROPIC_API_KEY=sk-ant-...
+scripts/deploy-managed-agent.sh reg-monitor</code>
+          <button class="copy-btn" data-copy="scripts/deploy-managed-agent.sh reg-monitor">Copy</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONNECTORS -->
+  <section class="connectors" id="connectors">
+    <div class="section-inner">
+      <h2>MCP Connectors</h2>
+      <p class="section-sub">Connect Claude to your existing legal systems. Connectors provide verified citations, live data, and write-back workflows.</p>
+      <div class="connectors-grid">
+        <div class="connector-group">
+          <h3>Legal Research</h3>
+          <ul>
+            <li>CoCounsel (Westlaw)</li>
+            <li>CourtListener</li>
+            <li>Trellis</li>
+            <li>Descrybe</li>
+            <li>Solve Intelligence</li>
+          </ul>
+        </div>
+        <div class="connector-group">
+          <h3>Contract Lifecycle</h3>
+          <ul>
+            <li>Ironclad</li>
+            <li>DocuSign</li>
+            <li>iManage</li>
+            <li>Agiloft</li>
+          </ul>
+        </div>
+        <div class="connector-group">
+          <h3>E-Discovery</h3>
+          <ul>
+            <li>Everlaw</li>
+            <li>Relativity</li>
+            <li>Trellis</li>
+          </ul>
+        </div>
+        <div class="connector-group">
+          <h3>Productivity</h3>
+          <ul>
+            <li>Slack</li>
+            <li>Google Drive</li>
+            <li>Microsoft SharePoint</li>
+            <li>Box</li>
+            <li>Linear / Jira / Asana</li>
+          </ul>
+        </div>
+        <div class="connector-group">
+          <h3>Specialty</h3>
+          <ul>
+            <li>Aurora (clinic)</li>
+            <li>Courtroom5</li>
+            <li>TopCounsel</li>
+            <li>Definely</li>
+            <li>Lawve AI</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSTALL -->
+  <section class="install" id="install">
+    <div class="section-inner">
+      <h2>Get Started in 60 Seconds</h2>
+      <div class="install-tabs">
+        <button class="tab-btn active" data-tab="cowork">Claude Cowork</button>
+        <button class="tab-btn" data-tab="code">Claude Code</button>
+        <button class="tab-btn" data-tab="managed">Managed Agents</button>
+      </div>
+
+      <div class="tab-content active" id="tab-cowork">
+        <ol class="install-steps">
+          <li><strong>Install Claude Desktop</strong> and get access to Claude Cowork</li>
+          <li>Click <strong>Customize → Browse plugins</strong></li>
+          <li>Search for <strong>claude-for-legal</strong> and install your practice area plugin</li>
+          <li>Restart Claude Desktop</li>
+          <li>Run <code>/&lt;plugin&gt;:cold-start-interview</code> to configure your practice profile</li>
+          <li>Connect research tools: <code>/&lt;plugin&gt;:cold-start-interview --check-integrations</code></li>
+        </ol>
+        <div class="install-note">
+          <strong>Important:</strong> Choose <em>user scope</em> (not project scope) when installing. Project scope blocks the plugin from reading files outside the project folder — your outlines in Downloads, your contract in Documents, your client file in Dropbox.
+        </div>
+      </div>
+
+      <div class="tab-content" id="tab-code">
+        <ol class="install-steps">
+          <li>Open Claude Code in your terminal</li>
+          <li>Add the marketplace:</li>
+        </ol>
+        <div class="code-block">
+          <code>/plugin marketplace add https://github.com/anthropics/claude-for-legal</code>
+          <button class="copy-btn" data-copy="/plugin marketplace add https://github.com/anthropics/claude-for-legal">Copy</button>
+        </div>
+        <ol class="install-steps" start="3">
+          <li>Install your practice area plugin:</li>
+        </ol>
+        <div class="code-block">
+          <code>/plugin install commercial-legal@claude-for-legal</code>
+          <button class="copy-btn" data-copy="/plugin install commercial-legal@claude-for-legal">Copy</button>
+        </div>
+        <ol class="install-steps" start="4">
+          <li>Run the setup interview:</li>
+        </ol>
+        <div class="code-block">
+          <code>/commercial-legal:cold-start-interview</code>
+          <button class="copy-btn" data-copy="/commercial-legal:cold-start-interview">Copy</button>
+        </div>
+      </div>
+
+      <div class="tab-content" id="tab-managed">
+        <ol class="install-steps">
+          <li>Set your Anthropic API key:</li>
+        </ol>
+        <div class="code-block">
+          <code>export ANTHROPIC_API_KEY=sk-ant-...</code>
+          <button class="copy-btn" data-copy="export ANTHROPIC_API_KEY=sk-ant-...">Copy</button>
+        </div>
+        <ol class="install-steps" start="2">
+          <li>Validate all cookbooks:</li>
+        </ol>
+        <div class="code-block">
+          <code>bash scripts/test-cookbooks.sh</code>
+          <button class="copy-btn" data-copy="bash scripts/test-cookbooks.sh">Copy</button>
+        </div>
+        <ol class="install-steps" start="3">
+          <li>Deploy an agent:</li>
+        </ol>
+        <div class="code-block">
+          <code>scripts/deploy-managed-agent.sh renewal-watcher</code>
+          <button class="copy-btn" data-copy="scripts/deploy-managed-agent.sh renewal-watcher">Copy</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRINCIPLES -->
+  <section class="principles">
+    <div class="section-inner">
+      <h2>Design Principles</h2>
+      <div class="principles-grid">
+        <div class="principle">
+          <div class="principle-icon">🎯</div>
+          <h3>Practice Profile-Driven</h3>
+          <p>Every plugin starts with a cold-start interview that learns your specific playbook. Subsequent skills reference your profile for jurisdiction-aware, calibrated output.</p>
+        </div>
+        <div class="principle">
+          <div class="principle-icon">🛡️</div>
+          <h3>Attorney Review Gate</h3>
+          <p>Explicit gates before anything is filed, sent, or relied on. Conservative defaults on privilege and subjective legal calls. Over-flagging is a two-way door; under-flagging is a one-way door.</p>
+        </div>
+        <div class="principle">
+          <div class="principle-icon">📍</div>
+          <h3>Source Attribution</h3>
+          <p>Every citation includes provenance and verification status. <code>[Westlaw]</code>, <code>[CourtListener]</code>, <code>[model knowledge — verify]</code>. The tag describes what happened, not what you'd like to claim.</p>
+        </div>
+        <div class="principle">
+          <div class="principle-icon">🌍</div>
+          <h3>Jurisdiction Recognition</h3>
+          <p>Skills detect non-US jurisdictions and adapt or surface gaps. A confident wrong answer using the wrong jurisdiction's law is worse than "I don't know."</p>
+        </div>
+        <div class="principle">
+          <div class="principle-icon">⚡</div>
+          <h3>No Build Step</h3>
+          <p>Everything is markdown and JSON. Works in Claude Cowork, Claude Code, and as managed agents. No webpack, no npm install, no configuration dance.</p>
+        </div>
+        <div class="principle">
+          <div class="principle-icon">🔐</div>
+          <h3>Prompt Injection Defense</h3>
+          <p>Retrieved content from contracts, case text, or documents is DATA — not instructions. Embedded directives in retrieved content are flagged, not executed.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">⚖️ Claude for Legal</div>
+      <div class="footer-links">
+        <a href="https://github.com/anthropics/claude-for-legal" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/anthropics/claude-for-legal/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">Contributing</a>
+        <a href="https://github.com/anthropics/claude-for-legal/blob/main/LICENSE" target="_blank" rel="noopener">Apache 2.0</a>
+      </div>
+      <div class="footer-disclaimer">
+        Every output is a draft for attorney review — not legal advice.<br>
+        Copyright 2026 Anthropic PBC. Apache License 2.0.
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

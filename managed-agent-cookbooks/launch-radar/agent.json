@@ -1,0 +1,13 @@
+{
+  "name": "launch-radar",
+  "version": "1.0.0",
+  "description": "Weekly scan of product roadmap for upcoming launches requiring legal review. Flags before engineering ships.",
+  "schedule": "weekly",
+  "model": "claude-opus-4-8",
+  "tools": {
+    "orchestrator": ["read_file"],
+    "subagent": ["read_file", "write_file", "mcp_linear", "mcp_jira", "mcp_slack"]
+  },
+  "env_required": ["ANTHROPIC_API_KEY"],
+  "env_optional": ["LINEAR_API_KEY", "JIRA_API_TOKEN", "SLACK_BOT_TOKEN", "SLACK_CHANNEL_ID"]
+}

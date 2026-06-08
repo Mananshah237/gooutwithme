@@ -1,0 +1,13 @@
+{
+  "name": "docket-watcher",
+  "version": "1.0.0",
+  "description": "Daily monitoring of court dockets for new filings, orders, and deadlines across active matters.",
+  "schedule": "daily",
+  "model": "claude-opus-4-8",
+  "tools": {
+    "orchestrator": ["read_file"],
+    "subagent": ["read_file", "write_file", "mcp_courtlistener", "mcp_trellis", "mcp_slack"]
+  },
+  "env_required": ["ANTHROPIC_API_KEY", "COURTLISTENER_API_KEY"],
+  "env_optional": ["TRELLIS_API_KEY", "SLACK_BOT_TOKEN", "SLACK_CHANNEL_ID"]
+}

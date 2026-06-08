@@ -1,0 +1,51 @@
+{
+  "name": "litigation-legal",
+  "version": "1.0.0",
+  "description": "Matter intake, chronology building, privilege review, deposition preparation, brief drafting, and claim charting for litigators and their teams.",
+  "author": "Anthropic",
+  "license": "Apache-2.0",
+  "skills": [
+    {
+      "name": "cold-start-interview",
+      "description": "Initial practice profile setup — learns your practice area, court mix, and matter management preferences in 10-15 minutes",
+      "path": "skills/cold-start-interview/SKILL.md"
+    },
+    {
+      "name": "matter-intake",
+      "description": "Structure a new matter — conflicts check inputs, key parties, claims, defenses, statute of limitations, and initial discovery needs",
+      "path": "skills/matter-intake/SKILL.md"
+    },
+    {
+      "name": "chronology",
+      "description": "Build a structured factual chronology from uploaded documents, deposition transcripts, and discovery materials",
+      "path": "skills/chronology/SKILL.md"
+    },
+    {
+      "name": "privilege-review",
+      "description": "Screen a document set for attorney-client privilege and work product protection; generate a privilege log",
+      "path": "skills/privilege-review/SKILL.md"
+    },
+    {
+      "name": "deposition-prep",
+      "description": "Generate a deposition outline with key topics, factual anchors, and impeachment hooks keyed to a specific witness",
+      "path": "skills/deposition-prep/SKILL.md"
+    },
+    {
+      "name": "brief-draft",
+      "description": "Draft or review a brief section — statement of facts, argument headings, or a specific legal argument with cited authority",
+      "path": "skills/brief-draft/SKILL.md"
+    },
+    {
+      "name": "claim-chart",
+      "description": "Map legal claims or patent claims to factual record in a structured chart for trial or arbitration preparation",
+      "path": "skills/claim-chart/SKILL.md"
+    }
+  ],
+  "tools": [
+    "read_file",
+    "write_file",
+    "web_search",
+    "mcp_courtlistener"
+  ],
+  "mcp": ".mcp.json"
+}

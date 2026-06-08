@@ -1,0 +1,40 @@
+{
+  "name": "ai-governance-legal",
+  "version": "1.0.0",
+  "description": "AI use-case triage, impact assessments, vendor AI reviews, and policy tracking for legal and compliance teams managing AI risk.",
+  "author": "Anthropic",
+  "license": "Apache-2.0",
+  "skills": [
+    {
+      "name": "cold-start-interview",
+      "description": "Initial practice profile setup — learns your AI inventory, applicable frameworks, and governance structure in 10-15 minutes",
+      "path": "skills/cold-start-interview/SKILL.md"
+    },
+    {
+      "name": "use-case-triage",
+      "description": "Assess a described AI use case against applicable legal frameworks and your internal risk tiers — outputs a risk rating and required next steps",
+      "path": "skills/use-case-triage/SKILL.md"
+    },
+    {
+      "name": "aia-generation",
+      "description": "Generate an AI impact assessment (AIA) or algorithmic impact assessment document for a specified use case",
+      "path": "skills/aia-generation/SKILL.md"
+    },
+    {
+      "name": "vendor-ai-review",
+      "description": "Review a vendor's AI system documentation, model cards, and contractual representations against your AI procurement standards",
+      "path": "skills/vendor-ai-review/SKILL.md"
+    },
+    {
+      "name": "policy-tracker",
+      "description": "Track the status of AI legislation, regulatory guidance, and standards (EU AI Act, NIST AI RMF, state laws) relevant to your operations",
+      "path": "skills/policy-tracker/SKILL.md"
+    }
+  ],
+  "tools": [
+    "read_file",
+    "write_file",
+    "web_search"
+  ],
+  "mcp": ".mcp.json"
+}

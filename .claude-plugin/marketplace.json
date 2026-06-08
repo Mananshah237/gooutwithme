@@ -1,0 +1,101 @@
+{
+  "name": "claude-for-legal",
+  "version": "1.0.0",
+  "description": "Reference agents, skills, and data connectors for in-house and law firm legal work across commercial, privacy, product, corporate, employment, regulatory, AI governance, IP, litigation, and legal education practice areas.",
+  "owner": "anthropics",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/anthropics/claude-for-legal",
+  "plugins": [
+    {
+      "name": "commercial-legal",
+      "path": "commercial-legal",
+      "description": "Reviews vendor agreements, NDAs, and SaaS subscriptions. Tracks renewal deadlines and routes escalations against your team playbook.",
+      "author": "Anthropic",
+      "first_command": "/commercial-legal:cold-start-interview"
+    },
+    {
+      "name": "privacy-legal",
+      "path": "privacy-legal",
+      "description": "Handles processing activities, PIAs, DPA review, DSAR responses, and regulatory gap analysis across jurisdictions.",
+      "author": "Anthropic",
+      "first_command": "/privacy-legal:cold-start-interview"
+    },
+    {
+      "name": "product-legal",
+      "path": "product-legal",
+      "description": "Reviews product launches, substantiates marketing claims, triages feature risk, and supports go-to-market sign-off.",
+      "author": "Anthropic",
+      "first_command": "/product-legal:cold-start-interview"
+    },
+    {
+      "name": "corporate-legal",
+      "path": "corporate-legal",
+      "description": "M&A diligence grids, disclosure schedules, board consents, closing checklists, and entity compliance calendars.",
+      "author": "Anthropic",
+      "first_command": "/corporate-legal:cold-start-interview"
+    },
+    {
+      "name": "employment-legal",
+      "path": "employment-legal",
+      "description": "Hire and termination reviews, worker classification, leave tracking, separation agreements, and investigation support.",
+      "author": "Anthropic",
+      "first_command": "/employment-legal:cold-start-interview"
+    },
+    {
+      "name": "regulatory-legal",
+      "path": "regulatory-legal",
+      "description": "Monitors regulatory feeds, diffs rules, tracks comment deadlines, runs gap analysis, and drafts NPRM responses.",
+      "author": "Anthropic",
+      "first_command": "/regulatory-legal:cold-start-interview"
+    },
+    {
+      "name": "ai-governance-legal",
+      "path": "ai-governance-legal",
+      "description": "Triages AI use cases, generates AI impact assessments, reviews vendor AI terms, and tracks multi-jurisdiction AI policy.",
+      "author": "Anthropic",
+      "first_command": "/ai-governance-legal:cold-start-interview"
+    },
+    {
+      "name": "ip-legal",
+      "path": "ip-legal",
+      "description": "Trademark clearance, FTO triage, cease-and-desist drafting, DMCA handling, open source compliance, and patent claim charts.",
+      "author": "Anthropic",
+      "first_command": "/ip-legal:cold-start-interview"
+    },
+    {
+      "name": "litigation-legal",
+      "path": "litigation-legal",
+      "description": "Matter portfolio management, chronologies, privilege review, claim charts, deposition prep, and brief drafting.",
+      "author": "Anthropic",
+      "first_command": "/litigation-legal:cold-start-interview"
+    },
+    {
+      "name": "legal-clinic",
+      "path": "legal-clinic",
+      "description": "Clinic setup, client intake, deadline tracking, memo drafting, and ABA-compliant supervision workflows for law school clinics.",
+      "author": "Anthropic",
+      "first_command": "/legal-clinic:cold-start-interview"
+    },
+    {
+      "name": "law-student",
+      "path": "law-student",
+      "description": "Socratic drilling, IRAC grading, case briefs, bar prep flashcards, and exam question forecasting for law students.",
+      "author": "Anthropic",
+      "first_command": "/law-student:cold-start-interview"
+    },
+    {
+      "name": "legal-builder-hub",
+      "path": "legal-builder-hub",
+      "description": "Community skill discovery and installation with security review, allowlist restrictions, license gates, and freshness validation.",
+      "author": "Anthropic",
+      "first_command": "/legal-builder-hub:browse"
+    },
+    {
+      "name": "cocounsel-legal",
+      "path": "external_plugins/cocounsel-legal",
+      "description": "Thomson Reuters Westlaw research reports, statute lookups, case law search, and citation verification via CoCounsel integration.",
+      "author": "Thomson Reuters",
+      "first_command": "/cocounsel-legal:setup"
+    }
+  ]
+}

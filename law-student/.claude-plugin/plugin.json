@@ -1,0 +1,45 @@
+{
+  "name": "law-student",
+  "version": "1.0.0",
+  "description": "Socratic drilling, IRAC practice, case briefing, bar exam prep, and exam performance forecasting for law students.",
+  "author": "Anthropic",
+  "license": "Apache-2.0",
+  "skills": [
+    {
+      "name": "cold-start-interview",
+      "description": "Initial profile setup — learns your law school, year, bar jurisdiction, course load, and study preferences in 10-15 minutes",
+      "path": "skills/cold-start-interview/SKILL.md"
+    },
+    {
+      "name": "socratic-drill",
+      "description": "Run a Socratic dialogue on a rule, doctrine, or case — questions escalate in difficulty until the student demonstrates command",
+      "path": "skills/socratic-drill/SKILL.md"
+    },
+    {
+      "name": "irac-practice",
+      "description": "Grade and coach an IRAC-structured answer — identifies rule gaps, analysis weaknesses, and conclusory reasoning",
+      "path": "skills/irac-practice/SKILL.md"
+    },
+    {
+      "name": "bar-prep",
+      "description": "Generate MBE-style practice questions, MEE essay prompts, or MPT tasks keyed to your bar jurisdiction and target subjects",
+      "path": "skills/bar-prep/SKILL.md"
+    },
+    {
+      "name": "case-brief",
+      "description": "Produce a structured case brief (facts, issue, holding, reasoning, concurrences/dissents, significance) for any cited decision",
+      "path": "skills/case-brief/SKILL.md"
+    },
+    {
+      "name": "exam-forecast",
+      "description": "Analyze a course syllabus and prior exams to forecast high-probability issue-spotting areas for an upcoming exam",
+      "path": "skills/exam-forecast/SKILL.md"
+    }
+  ],
+  "tools": [
+    "read_file",
+    "write_file",
+    "web_search"
+  ],
+  "mcp": ".mcp.json"
+}

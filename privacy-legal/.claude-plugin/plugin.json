@@ -1,0 +1,35 @@
+{
+  "name": "privacy-legal",
+  "version": "1.0.0",
+  "description": "Handles processing activities, PIAs, DPA review, DSAR responses, and regulatory gap analysis across jurisdictions.",
+  "author": "Anthropic",
+  "license": "Apache-2.0",
+  "skills": [
+    {
+      "name": "cold-start-interview",
+      "description": "Initial privacy practice profile setup",
+      "path": "skills/cold-start-interview/SKILL.md"
+    },
+    {
+      "name": "dsar-response",
+      "description": "Draft DSAR responses within applicable deadlines",
+      "path": "skills/dsar-response/SKILL.md"
+    },
+    {
+      "name": "dpa-review",
+      "description": "Review data processing agreements against your requirements",
+      "path": "skills/dpa-review/SKILL.md"
+    },
+    {
+      "name": "pia-generation",
+      "description": "Generate Privacy Impact Assessments for new processing activities",
+      "path": "skills/pia-generation/SKILL.md"
+    }
+  ],
+  "tools": [
+    "read_file",
+    "write_file",
+    "web_search"
+  ],
+  "mcp": ".mcp.json"
+}

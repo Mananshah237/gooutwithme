@@ -1,0 +1,40 @@
+{
+  "name": "product-legal",
+  "version": "1.0.0",
+  "description": "Product launch reviews, marketing claims clearance, feature legal triage, and terms of service analysis for product and growth teams.",
+  "author": "Anthropic",
+  "license": "Apache-2.0",
+  "skills": [
+    {
+      "name": "cold-start-interview",
+      "description": "Initial practice profile setup — learns your product lines, regulated verticals, and review cadence in 10-15 minutes",
+      "path": "skills/cold-start-interview/SKILL.md"
+    },
+    {
+      "name": "launch-review",
+      "description": "Run a structured legal checklist against a new product or feature before launch",
+      "path": "skills/launch-review/SKILL.md"
+    },
+    {
+      "name": "marketing-claims-review",
+      "description": "Evaluate advertising copy, landing pages, and email campaigns for FTC compliance, substantiation, and jurisdiction-specific rules",
+      "path": "skills/marketing-claims-review/SKILL.md"
+    },
+    {
+      "name": "feature-triage",
+      "description": "Quick legal-risk triage for a described feature or product change — flags regulated areas and recommends next steps",
+      "path": "skills/feature-triage/SKILL.md"
+    },
+    {
+      "name": "tos-review",
+      "description": "Review or draft terms of service, end-user license agreements, and acceptable use policies",
+      "path": "skills/tos-review/SKILL.md"
+    }
+  ],
+  "tools": [
+    "read_file",
+    "write_file",
+    "web_search"
+  ],
+  "mcp": ".mcp.json"
+}
